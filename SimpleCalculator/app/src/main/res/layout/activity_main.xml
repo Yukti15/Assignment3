@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_first_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_input"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/et_second_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_first_input"
+        android:layout_marginTop="15dp"
+        android:hint="@string/second_input"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_second_input"
+        android:layout_marginTop="15dp"
+        android:hint="@string/result"
+        android:padding="10dp" />
+
+    <GridLayout
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_result"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:onClick="operations"
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="@string/add" />
+
+        <Button
+            android:onClick="operations"
+            android:id="@+id/btn_sub"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="@string/subtract" />
+
+        <Button
+            android:onClick="operations"
+            android:id="@+id/btn_mul"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="@string/multiply" />
+
+        <Button
+            android:onClick="operations"
+            android:id="@+id/btn_div"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="@string/divide" />
+    </GridLayout>
+</RelativeLayout>
