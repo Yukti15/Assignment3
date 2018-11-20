@@ -67,10 +67,10 @@ public class CalculatorTest {
         assertThat(result, is(2));
     }
     @Test
-    public void division_3_1_3() {
+    public void division_2_1_2() {
         MainActivity mainActivity = new MainActivity();
-        int result = mainActivity.division(3, 1);
-        assertThat(result, is(3));
+        int result = mainActivity.division(2, 1);
+        assertThat(result, is(2));
     }
     @Test
     public void division_9_3_3() {
